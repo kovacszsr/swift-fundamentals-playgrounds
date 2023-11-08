@@ -11,9 +11,20 @@ import Foundation
 let cadence: Double = 180
 var testSteps = 0
 
+while testSteps < 10 {
+    testSteps += 1
+    print("Take a step")
+    
+    Thread.sleep(forTimeInterval: 60/cadence)
+}
 
 //:  Recreate the above cadence example using a repeat-while loop.
 testSteps = 0 
+
+repeat {
+    testSteps += 1
+    print("Take a step")
+} while testSteps < 10
 
 
 /*:
